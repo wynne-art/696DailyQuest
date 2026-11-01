@@ -1,0 +1,61 @@
+# 696 DailyQuest - fixed daily missions
+settings:
+  reset-timezone: "Asia/Jakarta"
+  activity-check-seconds: 30
+  afk-timeout-seconds: 120
+  max-walk-event-distance: 1.5
+  save-interval-seconds: 60
+
+messages:
+  prefix: "<#3498DB><bold>696 DAILY</bold></#3498DB> <dark_gray>»</dark_gray> "
+  no-permission: "<red>You don't have permission."
+  reloaded: "<green>Config reloaded."
+  claimed: "<green>Reward claimed!"
+  already-claimed: "<yellow>You already claimed this quest."
+  not-complete: "<red>Quest belum selesai."
+  inventory-full: "<red>Inventory penuh. Kosongkan slot dulu."
+
+quests:
+  playtime_30:
+    name: "<aqua>Main 30 Menit"
+    description: "<gray>Main aktif selama 30 menit."
+    type: PLAYTIME
+    target-minutes: 30
+    reward: ["GOLD_INGOT:3"]
+  playtime_60:
+    name: "<aqua>Main 1 Jam"
+    description: "<gray>Main aktif selama 1 jam."
+    type: PLAYTIME
+    target-minutes: 60
+    reward: ["DIAMOND:2"]
+  playtime_120:
+    name: "<aqua>Main 2 Jam"
+    description: "<gray>Main aktif selama 2 jam."
+    type: PLAYTIME
+    target-minutes: 120
+    reward: ["EMERALD:8"]
+  playtime_180:
+    name: "<aqua>Main 3 Jam"
+    description: "<gray>Main aktif selama 3 jam."
+    type: PLAYTIME
+    target-minutes: 180
+    reward: ["DIAMOND:5", "GOLDEN_APPLE:1"]
+
+  walk_500:
+    name: "<aqua>Jalan 500 Blok"
+    description: "<gray>Berjalan sejauh 500 blok."
+    type: WALK
+    target-blocks: 500
+    reward: ["GOLD_INGOT:3"]
+  walk_1000:
+    name: "<aqua>Jalan 1.000 Blok"
+    description: "<gray>Berjalan sejauh 1.000 blok."
+    type: WALK
+    target-blocks: 1000
+    reward: ["DIAMOND:2"]
+  walk_2000:
+    name: "<aqua>Jalan 2.000 Blok"
+    description: "<gray>Berjalan sejauh 2.000 blok."
+    type: WALK
+    target-blocks: 2000
+    reward: ["EMERALD:5"]

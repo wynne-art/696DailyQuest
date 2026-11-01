@@ -1,0 +1,19 @@
+name: 696DailyQuest
+version: 1.0.0
+main: com.sixnines.dailyquest.DailyQuestPlugin
+api-version: '1.21'
+author: 696 SMP
+description: Daily playtime quests for 696 SMP
+commands:
+  daily:
+    description: Open your daily quests
+    usage: /daily
+    aliases: [dailyquest, dq]
+  dailyquestadmin:
+    description: Admin controls for 696 DailyQuest
+    usage: /dailyquestadmin reload
+    permission: dailyquest.admin
+permissions:
+  dailyquest.admin:
+    description: Allows reloading 696 DailyQuest
+    default: op
